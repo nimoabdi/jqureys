@@ -18,13 +18,17 @@ function onReady(){
     // id
 
     let justOneListItem = $('#madam-li-element');
-    justOneListItem.text('DOM Manipulation')
+    justOneListItem.text('DOM Manipulation');
 
     //class
 
-    $('.first-and-last').css('color', 'blue')
+    $('.first-and-last').css('color', 'blue');
 
-    $('ul').append('<li>forms</li>')
+    $('ul').append('<li>forms</li>');
+    
+    $('#the-button').on('click', whenIClickedTheButton);
 
-
+    function whenIClickedTheButton() {
+        console.log('someone clicked me!');
+    }
 }
