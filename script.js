@@ -31,4 +31,10 @@ function onReady(){
     function whenIClickedTheButton() {
         console.log('someone clicked me!');
     }
+
+   let titleText =  $('h1').text();
+   console.log('title text is:', titleText);
+
+   let louderTitleText = titleText.toUpperCase();
+   $('h1').text(louderTitleText);
 }
